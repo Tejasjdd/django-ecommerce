@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>E-commerce </title>
+
+  <title>E-commerce</title>
+  <style media="screen">
+    .footer {
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color: #B3E5FC;">
+  {%if request.user.is_authenticated%}
+  {% include "ecom/customer_navbar.html" %}
+  {%else%}
+  {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+  <h3 style="text-align:center;">Ut scelerisque hendrerit enim sed maximus. Sed turpis nunc, commodo vitae tincidunt ac,
+    placerat quis ex. Phasellus tristique, enim ac finibus pellentesque, tortor ipsum ultrices nisi, in ultrices augue
+    nisl in diam. Quisque sapien ante, finibus sed quam sed, egestas cursus velit. Nullam eget tincidunt nisi.
+  </h3>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
